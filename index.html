@@ -60,8 +60,7 @@
     .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);background:var(--paper)}
     .card{padding:29px 29px 31px;min-height:258px}
     .card+.card{border-left:1px solid var(--line)}
-    .card .count{font-size:12px;color:#ad531a;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
-    .card h3{margin-top:29px;font-size:23px}
+    .card h3{margin-top:0;font-size:23px}
     .card p{margin-top:13px;color:var(--muted);font-size:15px;line-height:1.75}
     .section--white{background:#fff}
     .principles{display:grid;grid-template-columns:1fr 1fr;gap:110px;align-items:start}
@@ -87,11 +86,11 @@
     .contact-item a:hover{color:var(--orange)}
     .contact-item span{font-size:15px;color:#f0f3f3}
     .footer{background:#0b151c;border-top:1px solid #ffffff14;color:#99aab1;font-size:12px}
-    .footer .wrap{min-height:70px;display:flex;align-items:center;gap:25px;justify-content:space-between}
+    .footer .wrap{min-height:78px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 20px;padding:18px 0;text-align:center}
     .footer a{text-decoration:none}
     .footer a:hover{color:#fff}
     @media(max-width:1000px){.blueprint{right:-150px;opacity:.42}.principles{gap:45px}.contact-grid{gap:52px}}
-    @media(max-width:750px){.wrap{width:min(100% - 40px,var(--max))}.header .wrap{height:67px}.logo{width:189px}.nav{gap:17px}.nav a:not(.nav-cta){display:none}.nav .nav-cta{padding:9px 12px}.hero .wrap{min-height:570px;padding-block:83px 76px}.blueprint{top:13%;width:110%;right:-40%;height:82%;opacity:.26}.hero::before{background:linear-gradient(90deg,#0d1820df,#0d1820d0)}.hero .support{font-size:13px}.corner-mark{bottom:23px;font-size:8px}.section{padding:64px 0}.section-head{display:block}.section-head p{margin-top:16px}.cards{grid-template-columns:1fr}.card{min-height:auto;padding:25px 23px 27px}.card+.card{border-left:0;border-top:1px solid var(--line)}.card h3{margin-top:14px}.card p{margin-top:8px}.principles{grid-template-columns:1fr;gap:33px}.industries{margin-top:35px;gap:8px 16px}.industries strong{width:100%;margin-bottom:3px}.industries span:not(:first-of-type)::before{margin-right:12px}.contact{padding:65px 0 55px}.contact-grid{grid-template-columns:1fr;gap:39px}.footer .wrap{min-height:90px;flex-wrap:wrap;justify-content:start;gap:2px 28px;padding-block:18px}}
+    @media(max-width:750px){.wrap{width:min(100% - 40px,var(--max))}.header .wrap{height:67px}.logo{width:189px}.nav{gap:17px}.nav a:not(.nav-cta){display:none}.nav .nav-cta{padding:9px 12px}.hero .wrap{min-height:570px;padding-block:83px 76px}.blueprint{top:13%;width:110%;right:-40%;height:82%;opacity:.26}.hero::before{background:linear-gradient(90deg,#0d1820df,#0d1820d0)}.hero .support{font-size:13px}.corner-mark{bottom:23px;font-size:8px}.section{padding:64px 0}.section-head{display:block}.section-head p{margin-top:16px}.cards{grid-template-columns:1fr}.card{min-height:auto;padding:25px 23px 27px}.card+.card{border-left:0;border-top:1px solid var(--line)}.card h3{margin-top:0}.card p{margin-top:8px}.principles{grid-template-columns:1fr;gap:33px}.industries{margin-top:35px;gap:8px 16px}.industries strong{width:100%;margin-bottom:3px}.industries span:not(:first-of-type)::before{margin-right:12px}.contact{padding:65px 0 55px}.contact-grid{grid-template-columns:1fr;gap:39px}.footer .wrap{min-height:90px;gap:8px 16px;padding-block:20px}}
     @media(max-width:390px){.logo{width:162px}.nav .nav-cta{font-size:12px}.hero .wrap{min-height:580px}.hero h1{font-size:39px}.hero .lead{font-size:17px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.nav a{transition:none}.btn:hover{transform:none}}
 
@@ -170,9 +169,9 @@
           <p>Rätt kompetens i rätt skede – från övergripande projektstyrning till arbetsledning och personalförstärkning.</p>
         </div>
         <div class="cards">
-          <div class="card"><span class="count">01 /</span><h3>Projektledning</h3><p>Planering, samordning och uppföljning av projektets tidplan, resurser och leveranser.</p></div>
-          <div class="card"><span class="count">02 /</span><h3>Arbetsledning</h3><p>Daglig styrning nära produktionen med fokus på samordning, framdrift och säkerhet.</p></div>
-          <div class="card"><span class="count">03 /</span><h3>Bemanning &amp; uthyrning</h3><p>Flexibel förstärkning med erfarna yrkesarbetare och tjänstemän utifrån uppdragets behov.</p></div>
+          <div class="card"><h3>Projektledning</h3><p>Planering, samordning och uppföljning av projektets tidplan, resurser och leveranser.</p></div>
+          <div class="card"><h3>Arbetsledning</h3><p>Daglig styrning nära produktionen med fokus på samordning, framdrift och säkerhet.</p></div>
+          <div class="card"><h3>Bemanning &amp; uthyrning</h3><p>Flexibel förstärkning med erfarna yrkesarbetare och tjänstemän utifrån uppdragets behov.</p></div>
         </div>
       </div>
     </section>
@@ -183,10 +182,10 @@
           <div>
             <div class="principle"><h3>Rätt stöd, när det behövs</h3><p>Ett avgränsat uppdrag eller en kombination av ledning och personalförstärkning.</p></div>
             <div class="principle"><h3>Ordning i genomförandet</h3><p>Tydlig planering, löpande dialog och uppföljning nära verksamheten.</p></div>
-            <div class="principle"><h3>Direktkontakt</h3><p>Ni får en tydlig kontaktväg till Adam Lugnet på Fältmontage.</p></div>
+            <div class="principle"><h3>Direktkontakt</h3><p>Direktkontakt med er projektledare på Fältmontage genom hela projektet.</p></div>
           </div>
         </div>
-        <div class="industries" aria-label="Branschområden"><strong>Branschområden</strong><span>Industri &amp; montage</span><span>Bygg &amp; nyproduktion</span><span>ROT &amp; ombyggnad</span><span>Anläggning &amp; infrastruktur</span></div>
+        <div class="industries" aria-label="Branschområden"><strong>Branschområden</strong><span>Industri &amp; montage</span><span>Bygg &amp; nyproduktion</span><span>Renovering &amp; ombyggnad</span><span>Anläggning &amp; infrastruktur</span></div>
       </div>
     </section>
     <section class="contact" id="kontakt" aria-labelledby="contact-title">
@@ -203,7 +202,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap"><span>© 2026 Fältmontage AB · Org.nr 559284-5571</span><a href="mailto:Info@Faltmontage.se">Info@Faltmontage.se</a></div></footer>
+  <footer class="footer"><div class="wrap"><span>© 2026 Fältmontage AB · Org.nr 559284-5571</span><span>Fabriksvägen 1 · 972 54 Luleå</span><a href="mailto:Info@Faltmontage.se">Info@Faltmontage.se</a></div></footer>
 
   <dialog class="contact-dialog" id="kontakt-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
     <div class="dialog-inner">
